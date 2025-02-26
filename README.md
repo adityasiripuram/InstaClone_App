@@ -1,6 +1,6 @@
 InstaClone!!
 
-This is a Clone of instagram. We have used M.E.R.N Stack to create this Application.
+This is a Clone of instagram. I have used M.E.R.N Stack to create this Application.
 In the project directory, you can run:
 
 After installing Node Modules.
