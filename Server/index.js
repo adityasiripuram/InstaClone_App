@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const PORT = 5000;
 const { MONGOURI } = require("./db");
+require('dotenv').config();
+
 
 mongoose.connect(MONGOURI, {
   useNewUrlParser: true,
@@ -23,6 +24,6 @@ app.use(require("./routes/auth"));
 app.use(require("./routes/post"));
 app.use(require("./routes/user"));
 
-app.listen(PORT, () => {
-  console.log("Server is listening on", PORT);
+app.listen(process.env.MONGOPORT, () => {
+  console.log("Server is listening on", process.env.MONGOPORT);
 });
